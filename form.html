@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>Form in HTML</title>
+	<style>
+	form{
+	text-align:center;
+	}
+	</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+		<legend>User Information</legend><br>
+		<label>User Name</label><br>
+		<input type='text' name='name' required><br>
+		<label>Age</label><br>
+		<input type='number' min='1' ><br><br>
+		<label>Email</label><br>
+		<input type='email' ><br><br>
+		<label>Password</label><br>
+		<input type='password' name='pass'><br><br>
+		<label>Address</label><br>
+		<textarea rows='3' cols='20'></textarea><br><br>
+		<label>Country</label><br>
+		<input name="country" list="country_name">
+		<datalist id='country_name'>
+				<option value='India'>
+				<option value='Austria'>
+				<option value='France'>
+		</datalist><br><br>
+		<label>Pets</label><br>
+		<select name='pets' >
+			<option value='dog'>Dog</option>
+			<option value='cat'>Cat</option>
+		</select><br><br>	
+		<label>Gender</label><br>
+		<input type='radio' name='gender' value='male'>Male
+		<input type='radio' name='gender' value='female'>Female<br><br>
+		<label>Hobbies</label><br>
+		<input type='checkbox' value='dancing'>Dancing<br>
+		<input type='checkbox' value='reading'>Reading<br>
+		<input type='checkbox' value='singing'>Singing<br><br>
+		<label>Please upload your CV: </label><br>
+		<input type='file'><br><br>
+		<label>Search Something</label>
+		<input type='search'><br><br>
+		<label>Range</label><br>
+		<input type='range' min='1' max='10' value='8'><br><br>
+		<label>Time</label><br>
+		<input type='datetime-local' ><br><br>
+		<label>Url</label><br>
+		<input type='url'  ><br><br>
+		<input type='submit'>
+		<input type='reset'>
+		<br><br>
+		</fieldset>
+	</form>
+</body>
+</html>
